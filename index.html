@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Stream TV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-950': '#1a0b2e',
+                        'purple-900': '#2d1b4e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Header -->
+    <header class="bg-purple-950 py-6">
+        <div class="container mx-auto px-6">
+            <h1 class="text-3xl font-bold text-center text-purple-300">Infinity Stream TV</h1>
+            <p class="text-center text-gray-300 mt-2">Softwares e Serviços Digitais</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-b from-purple-950 to-black">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+                Soluções Digitais <span class="text-purple-400">Premium</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Windows, Office, Antivírus, Canva Pro e IPTV com os melhores preços e suporte garantido
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12 text-purple-300">Nossos Produtos</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Windows -->
+                <div class="bg-purple-900 rounded-lg p-6 hover:bg-purple-800 transition-colors duration-300 border border-purple-700">
+                    <div class="text-4xl mb-4 text-center">🪟</div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Windows</h4>
+                    <p class="text-gray-300 mb-4">Windows 10 e 11 Pro/Home com licença original e ativação vitalícia</p>
+                    <div class="text-2xl font-bold text-purple-300 mb-4">A partir de R$ 78</div>
+                    <button onclick="sendWhatsApp('Windows')" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-2 px-4 rounded-lg transition-colors duration-300">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Office -->
+                <div class="bg-purple-900 rounded-lg p-6 hover:bg-purple-800 transition-colors duration-300 border border-purple-700">
+                    <div class="text-4xl mb-4 text-center">📊</div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Microsoft Office</h4>
+                    <p class="text-gray-300 mb-4">Office 2021/365 completo com Word, Excel, PowerPoint e mais</p>
+                    <div class="text-2xl font-bold text-purple-300 mb-4">A partir de R$78</div>
+                    <button onclick="sendWhatsApp('Office')" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-2 px-4 rounded-lg transition-colors duration-300">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Antivirus -->
+                <div class="bg-purple-900 rounded-lg p-6 hover:bg-purple-800 transition-colors duration-300 border border-purple-700">
+                    <div class="text-4xl mb-4 text-center">🛡️</div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Antivírus</h4>
+                    <p class="text-gray-300 mb-4">Kaspersky</p>
+                    <div class="text-2xl font-bold text-purple-300 mb-4">A partir de R$ 62</div>
+                    <button onclick="sendWhatsApp('Antivirus')" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-2 px-4 rounded-lg transition-colors duration-300">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Canva -->
+                <div class="bg-purple-900 rounded-lg p-6 hover:bg-purple-800 transition-colors duration-300 border border-purple-700">
+                    <div class="text-4xl mb-4 text-center">🎨</div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Canva Pro</h4>
+                    <p class="text-gray-300 mb-4">Acesso completo ao Canva Pro com todos os recursos premium vitalicio</p>
+                    <div class="text-2xl font-bold text-purple-300 mb-4">R$ 65</div>
+                    <button onclick="sendWhatsApp('Canva')" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-2 px-4 rounded-lg transition-colors duration-300">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- IPTV -->
+                <div class="bg-purple-900 rounded-lg p-6 hover:bg-purple-800 transition-colors duration-300 border border-purple-700">
+                    <div class="text-4xl mb-4 text-center">📺</div>
+                    <h4 class="text-xl font-bold mb-3 text-white">IPTV 4k</h4>
+                    <p class="text-gray-300 mb-4">Milhares de canais, filmes e séries em alta qualidade</p>
+                    <div class="text-2xl font-bold text-purple-300 mb-4">R$ 30/mês</div>
+                    <button onclick="sendWhatsApp('IPTV')" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-2 px-4 rounded-lg transition-colors duration-300">
+                        Comprar Agora
+                    </button>
+                </div>
+
+                <!-- Combo -->
+                <div class="bg-gradient-to-br from-purple-800 to-purple-900 rounded-lg p-6 hover:from-purple-700 hover:to-purple-800 transition-all duration-300 border-2 border-purple-500">
+                    <div class="text-4xl mb-4 text-center">🎁</div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Combo Completo</h4>
+                    <p class="text-gray-300 mb-4">Windows + Office + Antivírus com desconto especial</p>
+                    <div class="text-2xl font-bold text-purple-300 mb-4">a partir de R$ 124 <span class="text-sm line-through text-gray-400">R$ 80</span></div>
+                    <button onclick="sendWhatsApp('Combo')" class="w-full bg-purple-600 hover:bg-purple-500 text-white py-2 px-4 rounded-lg transition-colors duration-300">
+                        Comprar Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-purple-950">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12 text-white">Por que escolher a Infinity Stream TV?</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h4 class="text-xl font-bold mb-3 text-purple-300">Entrega Imediata</h4>
+                    <p class="text-gray-300">Receba seus produtos em minutos após a confirmação do pagamento</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl mb-4">🔒</div>
+                    <h4 class="text-xl font-bold mb-3 text-purple-300">100% Seguro</h4>
+                    <p class="text-gray-300">Produtos originais com garantia e suporte técnico incluído</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-5xl mb-4">💬</div>
+                    <h4 class="text-xl font-bold mb-3 text-purple-300">Suporte 24/7</h4>
+                    <p class="text-gray-300">Atendimento especializado via WhatsApp a qualquer hora</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-6 text-white">Pronto para começar?</h3>
+            <p class="text-xl text-gray-300 mb-8">Entre em contato conosco pelo WhatsApp e tire todas suas dúvidas</p>
+            
+            <button onclick="sendWhatsApp('Informações')" class="inline-flex items-center bg-green-600 hover:bg-green-500 text-white text-xl font-bold py-4 px-8 rounded-lg transition-colors duration-300">
+                <span class="text-2xl mr-3">📱</span>
+                Falar no WhatsApp
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-950 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">&copy; 2025 Infinity Stream TV. Todos os direitos reservados.</p>
+            <p class="text-gray-400 mt-2">Softwares e serviços digitais com qualidade e confiança</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="sendWhatsApp('Olá')" class="bg-green-500 hover:bg-green-400 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        function sendWhatsApp(product) {
+            // Substitua pelo seu número do WhatsApp (formato: 5511999999999)
+            const phoneNumber = "5491122763751";
+            let message = "";
+            
+            switch(product) {
+                case 'Windows':
+                    message = "Olá! Tenho interesse no Windows. Pode me passar mais informações?";
+                    break;
+                case 'Office':
+                    message = "Olá! Gostaria de saber mais sobre o Microsoft Office.";
+                    break;
+                case 'Antivirus':
+                    message = "Olá! Tenho interesse nos antivírus premium. Quais opções vocês têm?";
+                    break;
+                case 'Canva':
+                    message = "Olá! Gostaria de adquirir o Canva Pro. Como funciona?";
+                    break;
+                case 'IPTV':
+                    message = "Olá! Tenho interesse no IPTV Premium. Pode me dar mais detalhes?";
+                    break;
+                case 'Combo':
+                    message = "Olá! Gostaria de saber mais sobre o Combo Completo.";
+                    break;
+                default:
+                    message = "Olá! Gostaria de mais informações sobre os produtos.";
+            }
+            
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97529c9e46357831',t:'MTc1NjIwMzc4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
